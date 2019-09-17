@@ -1,0 +1,271 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPstcl.master.cs" Inherits="MasterPstcl" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Welcome To PSTCL</title>
+    <link id="Link1" rel="shortcut icon" type="image/png" href="images/favicon.png" runat="server" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="description" content="www.pstcl.org Punjab State Transmission Corporation Limited is looking after transmission in the state of Punjab." />
+    <meta name="keywords" content="PSTCL, Electricity, Punjab, State, Transmission, Corporation, Limited, Punjab State Transmission Corporation Limited" />
+    <meta name="expires" content="never" />
+    <meta name="allow-search" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="styleSheet" href="styles/style.css?v=11341.55" rel="stylesheet" type="text/css" />
+    <link href="styles/StyleMenu.css?v=18.2" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+
+    <style type="text/css">
+        .col {
+            position: relative;
+            float: left;
+            padding: 0px;
+        }
+    </style>
+    <script type="text/javascript">
+        function external() {
+            var r = confirm("This link will take you to an external website.");
+            return r;
+        }
+        function styler(attr) {
+            var href;
+            switch (attr) {
+                case 'I': href = "styles/styleLarge.css?v=1.2"; break;
+                case 'N': href = "styles/style.css?v=1.2"; break;
+                case 'D': href = "styles/styleSmall.css?v=1.2"; break;
+
+                default:; break;
+            }
+            document.getElementById('styleSheet').href = href;
+        }
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="container mat-box" style="minwidthplaceholder: prop;">
+        <div class="row pad-top-1 pad-bottom-3" style="minwidthplaceholder: prop;">
+            <div class="mHeaderLogo col" style="margin-left:8px;min-width: 78px;">
+                <a href="http://www.pstcl.org">
+                    <img src="images/logo.png" alt="PSTCL" width="70px" height="50px" />
+                </a>
+            </div>
+            <div class="mHeaderTitle col pad-bottom-2 pad-top-4" style="min-width: 300px;">
+                <span style="padding-bottom: 3px; font-family: sans-serif; font-size: 28px; font-weight: normal; color: #093D91; font-variant: normal;">Punjab State Transmission Corporation Limited<br />
+                </span>
+                <span style="color: #444; font-family: Source Sans Pro, sans-serif; font-variant: normal; font-weight: normal; font-size: 14px; line-height: 20px;">(A Punjab Government Undertaking)</span>
+            </div>
+            <div class="mDivHeaderLinks col pull-right text-right" style="min-width: 450px;">
+                <a class="mHeaderLinks" href="#Main" style="color: #093d91;">Skip to main content</a> &nbsp;&nbsp;
+                     <div style="float: right; margin-bottom: 12px; margin-top: -1px;">
+
+                         <div class="leftbox" style="background: url(images/topLnkboxLeftBg.png) left top no-repeat; padding-left: 35px; width: 248px;">
+                             <div style="background: url(images/topLnkboxRightBg.png) right top no-repeat; padding-right: 35px; font-size: 8px;">
+                                 <div style="background-color: #093D91; color: #ffffff;">
+                                     <a class="mHeaderLinks" style="color: #ffffff;" href="javascript:styler('D');" target="_blank">A-</a> |
+                                 <a class="mHeaderLinks" style="color: #ffffff;" href="javascript:styler('N');" target="_blank">A</a> |
+                                 <a class="mHeaderLinks" style="color: #ffffff;" href="javascript:styler('I');" target="_blank">A+</a> |
+                                  <a class="mHeaderLinks" style="color: #ffffff;" href="http://mail.pstcl.org" target="_blank">Mail</a> |
+                                    <a class="mHeaderLinks" style="color: #ffffff;" href="contactus.aspx">Contact Us</a> |
+                                    <a class="mHeaderLinks" style="color: #ffffff; margin-right: 10px;" href="sitemap.aspx">Sitemap</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                <%--|
+                                    <a class="mHeaderLinks" href="feedback.aspx">Feedback</a>--%>
+
+                <div class="mDivSearch" id="searchwhite">
+                    <div class="mDivSearchText">
+                        <input id="txtsearch" type="text" class="search" placeholder="Search..." onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('txtsearch').value) + ' site:pstcl.org';}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mat-box " style="background: #093D91; minwidthplaceholder: prop; overflow: visible;">
+        <div class="row " style="minwidthplaceholder: prop;">
+            <div id='cssmenu' style="minwidthplaceholder: prop;">
+                <ul style="maxwidthplaceholder: prop; minwidthplaceholder: prop;">
+                    <li><a href="default.aspx">Home</a></li>
+                    <li><a href="#">About Us</a>
+                        <ul class="dropdown-content">
+                            <li style="display: none;"><a href="aboutus.aspx">About Us</a></li>
+                            <li><a href="vision.aspx">Vision & Mission</a></li>
+                            <li><a href="profiles1.aspx">Board of Directors</a></li>
+                            <li><a href="orgchart.aspx">Organization Structure</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Information</a>
+                        <ul>
+                            <li><a href="oo.aspx">Office Orders & Circulars</a></li>
+                            <li><a href="rtiFive.aspx">Regulations & Circulars </a></li>
+                            <li><a href="seniority.aspx">Seniority List </a></li>
+                            <li><a href="nps.aspx">New Pension Scheme(NPS) </a></li>
+                            <li><a href="trainingindex.aspx">Training </a>
+                                <!--<ul>
+                                            <li><a href="trainingemp.aspx">Employee</a></li>
+                                            <li><a href="trainingstudent.aspx">Student</a></li>
+                                        </ul>-->
+                            </li>
+                            <li><a href="deptexam.aspx">Department Exam </a>
+                                <!--<ul>
+                                            <li><a href="deptexamsylbs.aspx">Syllabus</a></li>
+                                            <li><a href="deptexamforms.aspx">Forms</a></li>
+                                            <li><a href="deptexamnotif.aspx">Notice</a></li>
+                                            <li><a href="deptexamresult.aspx">Results</a></li>
+                                        </ul>-->
+                            </li>
+                            <li><a href="transNetwork.aspx">Transmission Network </a></li>
+                            <li><a href="arr.aspx">ARR/Tariff Petitions </a></li>
+                            <li><a href="financialstatement.aspx">Financial Statements </a></li>
+                            <li><a href="csr.aspx">CSR Policy</a></li>
+                            <li><a href="contactus.aspx">Directory </a></li>
+                            <li><a href="download.aspx">Downloads </a></li>
+                            <li><a href="photogalleryindex.aspx">Photo Gallery</a></li>
+                            <li><a href="planning.aspx">Planning</a></li>
+                            <%--<li><a href="emp-gen.aspx">Employee General Info</a></li>--%>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tenders</a>
+                        <ul>
+                            <li><a href="nitindex.aspx">NITs</a></li>
+                            <li><a href="eoi.aspx">Expression Of Interest</a></li>
+                            <li><a target="_blank" href="https://eproc.punjab.gov.in/nicgep/app">E-Tendering(GePNIC)</a></li>
+
+                            <li><a target="_blank" href="https://drive.google.com/file/d/0B0jSnFynQgcpNGZVRDVQZDY4UjA/view">Training Material(GePNIC)</a></li>
+
+
+
+                            <li><a href="auction.aspx">Auction Notices</a></li>
+                            <li><a target="_blank" onclick="return external()" href="https://pstcl.abcprocure.com">e-Auction Service Provider</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="postingindex.aspx">Posting & Transfers</a>
+                        <ul>
+                            <li><a href="postinggaz2.aspx">Gazetted</a> </li>
+                            <li><a href="postingnongaz2.aspx">Non-Gazetted</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="recruitindex.aspx">Recruitment</a> </li>
+                    <li><a href="https://pshr.pspcl.in/" target="_blank">&nbsp;Employee
+                                Login&nbsp; </a></li>
+                    <li class='has-sub'><a href="#">&nbsp;RTI&nbsp;</a>
+                        <ul>
+                            <li><a href="rtiintro.aspx">Spotlight on RTI</a></li>
+                            <li><a href="rti.aspx">RTI Manuals</a></li>
+                            <li><a href="rtiinstr.aspx">RTI Instructions</a></li>
+                            <li><a href="rtistatus.aspx">RTI-Status of Applications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.punjabsldc.org/oa.aspx" onclick="return external()" target="_blank">Open Access</a> </li>
+                    <li><a href="cvo.aspx">CVO</a> </li>
+                    <li class='has-sub'><a href="#">Mail</a>
+                        <ul style="margin-left: -116px; float: left; text-align: right; right: 0px;">
+                            <li><a href="http://mail.pstcl.org" target="_blank">Login</a></li>
+                            <li><a href="emailids.aspx">Email-ids</a></li>
+                        </ul>
+                    </li>
+                    <li class='last has-sub' style="float: right;"><a href="#">Quick Links</a>
+                        <ul style="margin-left: -116px; float: left; text-align: right; right: 0px;">
+                            <li><a href="http://www.pspcl.in" target="_blank" onclick="return external()">PSPCL</a></li>
+                            <li><a href="http://www.punjabsldc.org" target="_blank" onclick="return external()">SLDC</a></li>
+                            <li><a href="http://www.cercind.gov.in" target="_blank" onclick="return external()">CERC</a></li>
+                            <li><a href="http://pserc.gov.in/" target="_blank" onclick="return external()">PSERC</a></li>
+                            <li><a href="http://india.gov.in/" target="_blank" onclick="return external()">National Portal</a></li>
+                            <li><a href="https://pstcl.abcprocure.com/" target="_blank" onclick="return external()">e-Auction Service Provider</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container" style="background: #f0f0f0;">
+        <div class="row" style="minwidthplaceholder: prop;">
+            <div id="Main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </div>
+    <div class="container " style="background: #f0f0f0; minwidthplaceholder: prop; padding-top: 10px;"></div>
+    <div class="container mFooterText mat-box" style="border-top: 0px solid #093D91; background: #353F40; font-size: 12px; font-weight: normal; minwidthplaceholder: prop; box-shadow: 0 -1px 10px rgba(0,0,0,.3);">
+        <div class="row pad-top-12" style="height: 130px; minwidthplaceholder: prop; color: #a5a5a5;">
+            <div class="col" style="min-width: 312px; line-height: 1.8em;">
+
+                <span style="color: #f0f0f0;">Address</span>
+                <br />
+                Punjab State Transmission Corp. Ltd.
+                <br />
+                Regd. Office, PSEB Head Office,<br />
+                The Mall, Patiala<br />
+                CIN: U40109PB2010SGC033814<br />
+
+                GSTIN: 03AAFCP4714J1ZK<br />
+
+            </div>
+            <div class="col" style="min-width: 313px; line-height: 1.8em;">
+
+
+                <label class="hyperText1">
+                    Important Links
+                </label>
+                <br />
+                <a class="hyperText" target="_blank" href="http://store.pstcl.org/Home/LoginPage.aspx">Daily Stores Stock Position</a><br />
+                <a class="hyperText" href="hospitaldiscount.aspx">Hospitals Offering Discounts</a><br />
+                <a class="hyperText" href="https://pstcl.abcprocure.com">e-Auction Service Provider</a>
+            </div>
+            <div class="col" style="min-width: 313px; color: #a5a5a5; line-height: 1.8em;">
+
+                <a class="hyperText" href="csr.aspx">CSR Policy</a><br />
+                <a class="hyperText" href="help.aspx">Help</a><br />
+                <a class="hyperText" href="termsofuse.aspx">Terms of Use</a><br />
+                <a class="hyperText" href="disclaimer.aspx">Disclaimer</a><br />
+                <div style="display: none;">
+                    <a class="hyperText" href="disclaimer.aspx">Privacy Poicy</a><br />
+                    <a class="hyperText" href="disclaimer.aspx">Copyright Policy</a><br />
+                    <a class="hyperText" href="disclaimer.aspx">Hyperlinking Policy</a><br />
+                    <a class="hyperText" href="disclaimer.aspx">Terms & Conditions</a><br />
+
+                </div>
+                <%--|
+                --%>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" style="background: #000; height: 30px; minwidthplaceholder: prop; border-bottom: 2px solid #093D91;">
+
+        <div class="row" style="width: 940px; minwidthplaceholder: prop; color: #f0f0f0; font-size: 11px; font-family: 'Roboto', Arial;">
+            <div class="col" style="minwidthplaceholder: prop; background: #000; padding-top: 8px; text-align: center; width: 100%;">
+                <asp:Label ID="lblLastMod" class="hyperText1" runat="server" Text="Label"></asp:Label><br />
+                Managed by O/o SE/IT, PSTCL, Patiala  &nbsp;&nbsp;&nbsp;&copy; PSTCL, All Rights Reserved. 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-75766899-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

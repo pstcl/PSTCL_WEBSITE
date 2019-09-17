@@ -1,0 +1,1208 @@
+﻿html
+{
+    height: 100%;  
+    /* IE10 Consumer Preview 
+    background-image: -ms-linear-gradient(top, #FCFCFC 0%, #DBD8D1 100%);
+    /* Mozilla Firefox 
+    background-image: -moz-linear-gradient(top, #FCFCFC 0%, #DBD8D1 100%);
+    /* Opera 
+    background-image: -o-linear-gradient(top, #FCFCFC 0%, #DBD8D1 100%);
+    /* Webkit (Safari/Chrome 10) 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FCFCFC), color-stop(1, #DBD8D1));
+    /* Webkit (Chrome 11+) 
+    background-image: -webkit-linear-gradient(top, #FCFCFC 0%, #DBD8D1 100%);
+    /* W3C Markup, IE10 Release Preview 
+    background-image: linear-gradient(to bottom, #FCFCFC 0%, #DBD8D1 100%);
+    /*background-repeat: no-repeat;*/
+     
+   /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #B4E0A4 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #B4E0A4 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #B4E0A4 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #B4E0A4));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #B4E0A4 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #B4E0A4 100%);
+}
+
+body
+{
+}
+
+/* LOGIN IDs AND CLASSES : START */
+#tblMainLoginS
+{
+    width:400px;
+    height:270px;
+    margin-top:-9px;
+    background-color:#FCFCFC;
+    border-style:ridge;
+    border-color:#E87900;
+    border-width:0em;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.1);
+}
+.loginLabelS
+{
+    width:150px;
+    height:20px;
+    font-family:Segoe UI Arial Sans-Serif;
+    color:#F56B21;
+    color:#009933;
+    font-weight:normal;
+}
+.loginTextBoxS
+{
+    width:130px;
+    height:20px;
+    border:0.1em;
+    border-style:solid;
+    border-color:#CDCDCD;
+    font-family:Segoe UI Arial Sans-Serif;
+    color:#888888;
+    font-size:14px;
+    font-weight:bold;
+    padding-left:2px;
+    border-radius:2px;
+}
+.siteLoginHeaderS
+{
+     /*
+    border-style: solid;
+    border-color: #F56B21;
+    background-color: #F06017;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F87327), to(#EC560F));
+    background: -moz-linear-gradient(top, #F87327, #EC560F);
+    background: -o-gradient(linear, left top, left bottom, from(#F87327), to(#EC560F));
+    color: White;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.7);
+    */
+    border-style: solid;
+    border-color: #009933;
+    background-color: #009933;
+    border-width:1px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#007927), to(#00DF48));
+    background: -moz-linear-gradient(top, #007927, #00DF48);
+    background: -o-gradient(linear, left top, left bottom, from(#007927), to(#00DF48));
+    color: White;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.7);
+}   
+/* LOGIN IDs AND CLASSES : END */
+
+
+/* COMMON IDs AND CLASSES : START */
+.sFormS
+{    
+    width: 1000px;
+}
+#dMainS
+{
+    width:1000px;
+    height:98%;
+    position:absolute;
+    left:50%;
+    margin-left:-500px;
+    display:none;
+}
+#dSiteMapS
+{
+    width:960px;
+    border-style:none;
+    border-color:White;
+    margin:0px 0px 0px 7px;
+    padding:0px 0px 0px 3px;
+    text-align:left;
+    font-weight:normal;
+    font-size:13px;
+    color:#999999;
+    font-family:Tahoma;
+}
+#tblMainEditS
+{
+    width:auto;
+    height:600px;
+    background-color:#FCFCFC;
+    border-style:ridge;
+    border-color:#669900;
+    border-width:0em;
+    margin-top:-8px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.1);
+}
+.siteHeaderS
+{
+    border-style: hidden;
+    border-color: #F56B21;
+    background-image: url('../Images/header_img.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+      
+    
+    
+    /*background-color: #F06017;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F87327), to(#EC560F));
+    background: -moz-linear-gradient(top, #F87327, #EC560F);
+    background: -o-gradient(linear, left top, left bottom, from(#F87327), to(#EC560F));
+    -webkit-filter: opacity(1);*/
+    color:#FCFCFC;
+    height: 90px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+.siteTitle
+{
+    color: #FCFCFC;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    font-family: 'Lucida Calligraphy';
+    font-size: 23px;
+    height: 70px;
+    vertical-align: top;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+}
+.siteSubTitle
+{
+    font-weight: lighter;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'Segoe UI Symbol';
+    font-size: 18px;
+    vertical-align: bottom;
+    text-shadow: 0px 3px 3px 3px rgba(0,0,0,0.15);
+}
+.siteLogo
+{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.15);
+}
+#dWorkMainS
+{
+    width:980px;
+    height:100%;
+}
+#dFooterS
+{
+     width:1000px; 
+     margin:3px 0px 0px 1px;
+     color:#333333; 
+     font-family:Segoe UI;
+     font-weight:normal; 
+     font-size:12px; 
+     float:left;
+}
+.dWorkHomeS
+{
+    width:auto;
+    border-style:solid;
+    border-color:#E9E9E9;
+    border-width:0px;
+    margin:5px 7px 10px 10px;
+    padding:0px 0px 5px 0px;
+    text-align:center;  
+    box-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+}
+.homeICardOuterS
+{
+    width:350px;
+    height:180px;
+    text-align:center;
+    padding:8px 25px 15px 25px;
+    background-color:#F9F9F9;
+    border:0.1em ridge #F9F9F9;
+    font-weight:bold;
+    font-size:13px;
+    color:#777777;
+    font-family:Tahoma;
+    box-radius:5px;
+    box-shadow:0px 0px 3px 0px rgba(0,0,0,0.15);
+}
+.homeICardInnerS
+{
+    height:145px;
+    padding:8px 0px 0px 8px;
+    background-color:#F9F9F9;
+    font-weight:normal;
+    font-size:13px;
+    color:#777777;
+    font-variant:small-caps;
+    font-family:Tahoma;
+    box-radius:5px;
+    box-shadow:0px 0px 3px 0px rgba(0,0,0,0.15);
+}
+.homeMsgS
+{
+    float: left;
+    color: #FF00FF;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #F9F9F9;
+    vertical-align: top;
+    width: 940px;
+    height: 20PX;
+    margin:3px 0px 0px 7px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+    display: block;
+}   
+.dWorkS
+{
+    width: 960px;
+    background-color: #F9F9F9;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-width: 0.1em;
+    margin: 5px 0px 7px 10px;
+    padding: 0px 0px 5px 0px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.15);
+}
+.sDivHeaderS
+{
+    padding: 2px 0px 2px 5px;
+    background-color: #A8DFF4;
+    font-family: Verdana;
+    color: #0092C1;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 0px 5px 3px;
+    margin:0px 0px 3px 0px;
+    border-radius: 2px;
+}
+.sPanel
+{
+    display:none;
+    position:static;
+}
+#tblSiteMaintenanceS
+{
+    width:400px;
+    height:270px;
+    margin-top:-8px;
+    border-radius:2px;
+    box-shadow:3px 3px 3px 3px rgba(0,0,0,0.2);
+}
+/* COMMON IDs AND CLASSES : END */
+
+/* LABELS : START */
+.sLabelS
+{
+    height: 18px;
+    border-style: none;
+    border-color: transparent;
+    background-color: #F9F9F9;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Tahoma;
+    vertical-align:middle;
+    color: #8C8C8C;
+    padding: 1px 5px 1px 5px;
+    text-align: left;
+}
+.sLabelNumericS
+{
+    height: 19px;
+    border-width:1px;
+    border-style: solid;
+    border-color:#CDCDCD;
+    background-color: #F9F9F9;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Tahoma;
+    vertical-align:middle;
+    color: #8C8C8C;
+    padding: 1px 5px 1px 5px;
+    text-align:right;
+    border-radius:3px;
+}
+.sLabelPWS
+{
+    height: 17px;
+    border-style: none;
+    border-color: transparent;
+    background-color: #F9F9F9;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Tahoma;
+    vertical-align:middle;
+    color: #8C8C8C;
+    padding: 1px 5px 1px 5px;
+    text-align:right;
+}
+/* LABELS : END */
+
+/* TEXTBOXES : START */
+.sTextBoxS
+{
+    width:430px;
+    height:19px;
+    margin:2px 0px 2px 0px;
+    border:0.1em;
+    border-style:ridge;
+    border-color:#CDCDCD;
+    color:#8C8C8C;
+    font-size:17px;
+    text-align:left;
+    border-radius:3px;
+}
+.sTextBoxReadOnlyS
+{
+    width:430px;
+    height:19px;
+    margin:2px 0px 2px 0px;
+    border:0.1em;
+    background-color:#F9F9F9;
+    border-style:solid;
+    border-color:#E1E1E1;
+    color:#8C8C8C;
+    font-size:14px;
+    text-align:left;
+    border-radius:3px;
+}
+.sTextBoxNumericS
+{
+    width:170px;
+    height:19px;
+    border:0.1em;
+    border-style:ridge;
+    border-color:#CDCDCD;
+    color:#8C8C8C;
+    font-size:14px;
+    text-align:right;
+    font-weight:bold;
+    border-radius:3px;
+}
+.sTextBoxNumericReadOnlyS
+{
+    width:170px;
+    height:19px;
+    border:0.1em;
+    background-color:#F9F9F9;
+    border-style:solid;
+    border-color:#E1E1E1;
+    color:#8C8C8C;
+    font-size:14px;
+    text-align:right;
+    font-weight:bold;
+    border-radius:3px;  
+}
+.sTextBoxGVS
+{
+    width:160px;
+    height:18px;
+    border:0.1em;
+    border-style:ridge;
+    border-color:#CDCDCD;
+    color:#8C8C8C;
+    font-size:14px;
+    text-align:right;
+    font-weight:bold;
+    border-radius:3px;
+}
+.sTextBoxGVReadOnlyS
+{
+    width:160px;
+    height:18px;
+    border:0.1em;
+    background-color:#F9F9F9;
+    border-style:solid;
+    border-color:#E1E1E1;
+    color:#8C8C8C;
+    font-size:14px;
+    text-align:right;
+    font-weight:bold;
+    border-radius:3px;
+}
+.sTextBoxPWS
+{
+    width:170px;
+    height:19px;
+    border:0.1em;
+    border-style:ridge;
+    border-color:#CDCDCD;
+    color:#8C8C8C;
+    font-size:14px;
+    text-align:left;
+    font-weight:bold;
+    border-radius:3px;
+}
+/* TEXTBOXES : END */
+
+/* DROPDOWNS : START */
+.sDDLS
+{
+    background-color:#F9F9F9;
+    width:120px;
+    height:22px;
+    border:1px;
+    border-style:solid;
+    border-color:#CDCDCD;
+    color:#666666;
+    font-size:14px;
+    vertical-align:top;
+    border-radius:2px;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15);
+}
+.sDDLGVS
+{
+    background-color:#F9F9F9;
+    width:120px;
+    height:22px;
+    border:1px;
+    border-style:solid;
+    border-color:#CDCDCD;
+    color:#666666;
+    font-size:14px;
+    border-radius:2px;
+}
+/* DROPDOWNS : END */
+
+/* BUTTONS : START */
+.sButtonS
+{
+    background-color: #FCFCFC;
+    color: #8C8C8C;
+    width: 85px;
+    height: 27px;
+    font-weight: bold;
+    font-size:12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.15);
+}
+.sImageButtonS
+{
+    vertical-align:bottom;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.15);
+}
+/* BUTTONS : END */
+
+/* CHECKBOXES : START */
+.sCheckBoxS
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    background-color:#F9F9F9;
+    text-align:left;
+    font-weight:normal;
+    font-size:17px;
+    vertical-align:bottom;
+    color:#8C8C8C;
+    padding:1px 1px 1px 0px;
+    margin:1px 1px 1px 0px;
+}
+/* CHECKBOXES : END */
+
+/* GRID VIEWS : START */
+.gvHeaderS
+{
+    background-color:#A8DFF4;
+    color:#0092C1;
+    border-color:#4AD2FF;
+}
+.gvMainS
+{
+    color:#555555;
+    border-style:solid;
+    border-color:#A8DFF4;
+    border-width:0px;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.15);
+}
+.gvRowStyleS
+{
+    color:#555555;
+    background-color:#FCFCFC;
+}
+.gvAltRowStyleS
+{
+    color:#555555;
+    background-color:#F5F5F5;
+}
+.gvEditRowS
+{
+    background-color:#E1E1E1;
+}
+.gvFooterRowS
+{
+    background-color:#E1E1E1;
+    font-weight:bold;
+    color:#555555;
+}
+.gvSelectedRowS
+{
+    background-color:#CDCDCD;
+    font-weight:bold;
+    color:#555555;
+} 
+/* GRID VIEWS : END */
+
+/* POPUPS : START */
+.pnlConfirmS
+{
+    background-color:#F9F9F9;
+    border-width:1px;
+    border-style:ridge;
+    border-color:#DCDCDC;
+    border-radius: 3px;
+}
+.sModalPopupHeaderS
+{
+    border-style:none;
+    border-width:1px;
+    background-color:#A8DFF4;
+    border-color:#DCDCDC;
+    font-family:Verdana;
+    font-weight:500;
+    font-size:12px;
+    text-align:left; 
+    color:#0092C1;
+    font-weight:bold;
+    padding:5px 0px 5px 3px;
+    margin:0px 0px 7px 0px;
+} 
+.modalPopupButtonS
+{
+    background-color: #FCFCFC;
+    color: #8C8C8C;
+    width: 75px;
+    height: 27px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.15);
+}
+.sPanelCertificateS
+{
+    background-color:#F9F9F9;
+    border-width:1px;
+    border-style:ridge;
+    border-color:#DCDCDC;
+    padding-left:0px 10px 0px 10px;
+    font-family:Tahoma;
+    color:White;
+    font-weight:500;
+    font-size:15px;
+    text-align:center;
+    border-radius: 5px;
+}
+/* POPUPS : END */
+
+/* RADIO BUTTONS : START */
+.sRadioButtonListS
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    background-color:#F9F9F9;
+    text-align:left;
+    font-weight:normal;
+    font-size:17px;
+    vertical-align:bottom;
+    color:#8C8C8C;
+    padding:1px 5px 1px 5px;
+}
+/* RADIO BUTTONS : END */
+
+/* AUTOCOMPLETE LIST : START */
+.sACCompletionListS
+{
+    margin : 0px!important ;
+    background-color : #FCFCFC ;
+    color : Black ;
+    z-index:1000;
+    border : buttonshadow ;
+    border-width : 1px ;
+    border-style : solid ;
+    cursor : pointer ;
+    overflow : auto ;
+    height : 220px ;
+    width:390px !important;
+    font-family : Tahoma ;
+    font-size : small ;
+    text-align : left ;
+    list-style-type : none ;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.15);
+}
+.sACCompletionListS_JVNo
+{
+    margin : 0px!important ;
+    background-color : #FCFCFC ;
+    color : Black ;
+    z-index:1000;
+    border : buttonshadow ;
+    border-width : 1px ;
+    border-style : solid ;
+    cursor : pointer ;
+    overflow : auto ;
+    height : 220px ;
+    width:50px !important;
+    font-family : Tahoma ;
+    font-size : small ;
+    text-align : left ;
+    list-style-type : none ;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.15);
+}
+.sACCompletionListS_UChq
+{
+    margin : 0px!important ;
+    background-color : #FCFCFC ;
+    color : Black ;
+    z-index:1000;
+    border : buttonshadow ;
+    border-width : 1px ;
+    border-style : solid ;
+    cursor : pointer ;
+    overflow : auto ;
+    height : 220px ;
+    width:90px !important;
+    font-family : Tahoma ;
+    font-size : small ;
+    text-align : left ;
+    list-style-type : none ;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.15);
+}
+.sACListItemS
+{
+    margin : 0px!important ;
+    background-color : #FCFCFC ;
+    color :#444444;
+    padding : 1px ;
+}
+.sACHighlightedListItemS
+{
+    background-color: #16A5D7;
+    color:#FFFFFF;
+    padding: 3px 0px 3px 2px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Verdana;
+    border-top: 2px;
+    border-top-style: ridge;
+    border-left: 2px;
+    border-bottom: 2px;
+    border-right: 1px;
+    border-style: outset;
+    border-color: #69CEEF #0E6A89 #0E6A89 #69CEEF;
+}
+/* AUTOCOMPLETE LIST : END */
+
+    
+/* PIE CHART : START */
+
+/* PIE CHART : END */
+
+.td_data
+{
+    text-align:left;
+    padding:0px 10px 0px 0px;
+    vertical-align:bottom;
+}
+
+.td_control
+{
+    text-align:left;
+    vertical-align:bottom;
+}
+
+.sgvLabel
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    text-align:right;
+    font-weight:bold;
+    font-size:16px;
+    vertical-align:bottom;
+    color:#666666;
+}
+
+.sWaterMark
+{
+    background-color:#FFDEA8;
+    color:Black;
+}
+
+/* PASSWORD STRENGTH : START */
+.sPS1
+{
+    border-color:Red;
+    border-width:2px;
+    border-style:solid;
+    background-color:White;
+    color:Red;
+    padding:2px 3px 2px 3px;
+    font-size:12px;
+    font-weight:bold;
+    font-family:Verdana;
+    text-align:center;
+    vertical-align:middle;
+}
+.sPS2
+{
+    border-color:Orange;
+    border-width:2px;
+    border-style:solid;
+    background-color:White;
+    color:Orange;
+    padding:2px 3px 2px 3px;
+    font-size:12px;
+    font-weight:bold;
+    font-family:Verdana;
+    text-align:center;
+    vertical-align:middle;
+}
+.sPS3
+{
+    border-color:Green;
+    border-width:2px;
+    border-style:solid;
+    background-color:White;
+    color:Green;
+    padding:2px 3px 2px 3px;
+    font-size:12px;
+    font-weight:bold;
+    font-family:Verdana;
+    text-align:center;
+    vertical-align:middle;
+}
+.sPS4
+{
+    border-color:Lime;
+    border-width:1px;
+    border-style:solid;
+    background-color:White;
+    color:Black;
+    padding:2px 3px 2px 3px;
+    font-size:14px;
+    font-family:Verdana;
+}
+.sPS5
+{
+    border-color:Green;
+    border-width:1px;
+    border-style:solid;
+    background-color:White;
+    color:Black;
+    padding:2px 3px 2px 3px;
+    font-size:14px;
+    font-family:Verdana;
+}
+/* PASSWORD STRENGTH : END */
+
+/* OBSOLETE START */
+#dWork0
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:1px 1px 1px 1px;
+}
+
+#dWork1
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+
+#dWork2_0
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+#dWork2
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+#dWork3
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+
+#dWork4
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+
+#dWork5
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+
+#dWork6
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+
+#dWork7
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+ 
+#dWork8
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:5px 0px 5px 0px;
+}
+#tblHome
+{
+    padding:0px 0px 0px 0px;
+    border-width:3px;
+    border-style:ridge;
+    border-color:#E68A00;
+    height:370px;
+}
+
+#tblMainChgPasswd1
+{
+    width:400px;
+    background-color:White;
+    border-style:ridge;
+    border-color:#E68A00;
+    border-width:1px;
+}
+
+#tblOtherRpt
+{
+    background-color:White;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+}
+.dWork0
+{
+    width:970px;
+    border-style:solid;
+    border-color:Silver;
+    border-width:1px;
+    margin:5px 0px 0px 10px;
+    padding:0px 0px 0px 0px;
+}
+.td_label
+{
+    float:none;
+    text-align:left;
+    font-weight:bold;
+    color:#E68A00;
+    padding:10px 10px 0px 0px;
+    vertical-align:bottom;
+}
+.sButton
+{
+    background-color:#E68A00;
+    color:White;
+    width:85px;
+    height:30px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.sButton1
+{
+    background-color:#E68A00;
+    color:White;
+    height:25px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top;
+}
+.sImageButton
+{
+    vertical-align:bottom;
+}
+
+.sDDL
+{
+    width:145px;
+    height:25px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:16px;
+}
+
+.sDDLGV
+{
+    background-color:#F5F5F5;
+    width:120px;
+    height:22px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:14px;
+}
+
+.sTextBox
+{
+    width:170px;
+    height:23px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:16px;
+    text-align:right;
+    font-weight:bold;
+}
+
+.sTextBoxPW
+{
+    width:170px;
+    height:23px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:16px;
+    text-align:left;
+    font-weight:bold;
+}
+
+.sTextBoxGV
+{
+    width:160px;
+    height:18px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:14px;
+    text-align:right;
+    font-weight:bold;
+}
+
+.sTextBoxPW
+{
+    width:170px;
+    height:23px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:16px;
+    text-align:left;
+    font-weight:bold;
+}
+
+.sTextBox1
+{
+    width:430px;
+    height:23px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:17px;
+    text-align:left;
+}
+
+.sTextBox11
+{
+    display:none;
+    width:430px;
+    height:23px;
+    border:1px;
+    border-style:solid;
+    border-color:Gray;
+    color:#666666;
+    font-size:17px;
+    text-align:left;
+}
+
+.sLabel
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    background-color:White;
+    text-align:left;
+    font-weight:bold;
+    font-size:16px;
+    vertical-align:text-top;
+    color:#666666;
+    padding:1px 5px 1px 5px;
+}
+
+.sLabel1
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    background-color:White;
+    text-align:left;
+    font-weight:bold;
+    font-size:16px;
+    vertical-align:middle;
+    color:#666666;
+    padding:1px 5px 1px 5px;
+    text-align:center;
+}
+
+.sCheckBox
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    background-color:White;
+    text-align:left;
+    font-weight:normal;
+    font-size:17px;
+    vertical-align:bottom;
+    color:#666666;
+    padding:1px 1px 1px 0px;
+    margin:1px 1px 1px 0px;
+}
+
+.sRadioButtonList
+{
+    height:20px;
+    border-style:none;
+    border-color:transparent;
+    background-color:White;
+    text-align:left;
+    font-weight:normal;
+    font-size:17px;
+    vertical-align:bottom;
+    color:#666666;
+    padding:1px 5px 1px 5px;
+}
+.sModalPopup
+{
+    background-color:Black;
+    opacity:.7;
+}
+.sModalPopupHeader
+{
+    background-color:#E68A00; 
+    border-style:ridge;
+    border-bottom-style:none;
+    border-width:2px;
+    border-color:#C47500;
+    padding-left:3px;
+    font-family:Tahoma;
+    color:White;
+    font-weight:500;
+    font-size:15px;
+    text-align:left; 
+    height:23px;
+}
+.sPanelConfirm
+{
+    background-color:#F4F4F4; 
+    border-style:ridge;
+    border-top-style:none;
+    border-width:2px;
+    border-color:#D4D4D4;
+    padding-left:0px;
+    font-family:Tahoma;
+    color:White;
+    font-weight:500;
+    font-size:15px;
+    text-align:center; 
+}
+
+.sDivHeader
+{
+    padding:2px 0px 2px 5px;
+    background-color:#FFEDD2;
+    border-style:solid;
+    border-color:#FFE3B9;
+    border-width:1px;
+    font-family:Verdana;
+    color:#E68A00;
+    font-size:14px;
+    font-weight:normal;
+    text-align:left;
+}
+.sPnlIUT
+{
+    padding-left:5px;
+    text-align:left;
+}
+.sModalPopupButton
+{
+    background-color:#E68A00;
+    color:White;
+    width:100px;
+    height:27px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:bottom;
+}
+/* OBSOLETE END */ 

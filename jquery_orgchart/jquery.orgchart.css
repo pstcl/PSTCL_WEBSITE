@@ -1,0 +1,96 @@
+div.orgChart {
+    border                : 1px solid #e8edff;
+    background-color      : transparent;
+    margin                : 10px;
+    padding               : 20px;
+}
+
+div.orgChart h2 {
+    margin                : 6px;
+    font-size             : 12px;
+    font-family           : "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-weight           : normal;
+    border-bottom         : 1px solid black;
+    border-bottom         : none;
+    color                 : #669;
+}
+
+div.orgChart ul {
+    list-style            : none;
+    margin                : 4px;
+    padding               : 0px;
+    font-size             : 11px;
+    font-family           : "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-weight           : normal;
+    text-align            : left;
+    color                 : #669;
+}
+
+div.orgChart ul.stack,
+div.orgChart ul.stack ul {
+    text-align            : center;
+}
+
+div.orgChart table {
+    width                 : 100%;
+}
+
+div.orgChart tr.lines td.line {
+    width                 : 1px;
+    height                : 20px;
+}
+
+div.orgChart tr.lines td.top {
+    border-top            : 3px solid #e4e4e4;
+}
+
+div.orgChart tr.lines td.left {
+    border-right          : 2px solid #e4e4e4;
+}
+
+div.orgChart tr.lines td.right {
+    border-left           : 2px solid #e4e4e4;
+}
+
+div.orgChart td {
+    text-align            : center;
+    vertical-align        : top;
+    padding               : 0px 2px;
+}
+
+div.orgChart div.node {
+    cursor                : default;
+    border                : 1px solid #e4e4e4;
+    display               : inline-block;
+    padding               : 0 4px;
+    width                 : 112px;
+    height                : 42px;
+    background-color      : #f8f8f8;
+    line-height           : 1.3em;
+    border-radius         : 2px;
+    box-shadow            : 1px 1px 3px #888888;
+    -moz-border-radius    : 2px;
+    -moz-box-shadow       : 1px 1px 3px #888888;
+    -webkit-border-radius : 2px;
+    -webkit-box-shadow    : 1px 1px 3px #888888;
+}
+
+div.orgChart div.hasChildren {
+    background-color      : #f8f8f8;
+}
+
+div.orgChart.interactive div.hasChildren {
+    cursor                : pointer;
+    background-color      : #0099CC;
+}
+
+div.orgChart div.node.hover {
+    background-color      : white;
+}
+
+div.node.special
+{
+    background-color: #B6DCB9 !important;
+}
+
+
