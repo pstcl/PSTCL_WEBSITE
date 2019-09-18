@@ -47,9 +47,9 @@
                     3.  <a class="mInnerText" href="aboutcehisd.aspx">Chief Engineer/HR, IT ,Store & Disposal</a> <br /><br />
                     4.  <a class="mInnerText" href="aboutcesldc.aspx">Chief Engineer/State Load Dispatch Centre</a> <br /><br />
                     5.  <a class="mInnerText" href="aboutcfo.aspx">Chief Financial Officer</a><br /><br />
-                    6.  <a class="mInnerText" href="aboutfa.aspx">Financial Advisor</a> <br /><br />
+                    6.  <a class="mInnerText" href="aboutfa.aspx">CAO(F&A)</a> <br /><br />
 					7.  <a class="mInnerText" href="aboutcs.aspx">Company Secretary</a> <br /><br />
-                    8.  <a class="mInnerText" href="aboutca.aspx">Chief Auditor</a> <br /><br />
+                 
                 </p>
                                 
 
